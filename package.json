@@ -1,0 +1,15 @@
+{
+  "name": "InterviewQuestionSolution",
+  "preferGlobal": true,
+  "version": "0.0.1",
+  "author": "William Muli <willi.wambu@gmail.com>",
+  "description": "A program to find the largest spread in weather data",
+  "engines": {
+    "node": ">=0.10"
+  },
+  "scripts": {
+    "start": "node ./program.js"
+  },
+  "dependencies": {
+  }
+}
