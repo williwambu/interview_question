@@ -10,7 +10,7 @@ To run the solution you need node and npm(Check how to install at https://nodejs
 If you already have node and npm:
 
     cd /path/to/project
-    npm startg
+    npm start
 
 This will run program.js file.
 
