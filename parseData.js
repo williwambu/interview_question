@@ -4,7 +4,7 @@
  * @returns {Array} An array of arrays of the parsed data
  */
 function parseData(data) {
-    //Split the string using newline ter
+    //Split the string using newline terminator
     var rows = data.split('\n');
     //Remove the empty line separating the headers from the values
     rows.splice(1, 1);
@@ -15,7 +15,8 @@ function parseData(data) {
 
         //Replace multiple spaces with one space
         //then split the string using space delimiter
-        return rows[index] = rows[index].replace(/\s+/g, ' ').split(' ');
+        //limit the number of split to 3, the rest is unnecessary
+        return rows[index] = rows[index].replace(/\s+/g, ' ').split(' ', 3);
     });
 }
 

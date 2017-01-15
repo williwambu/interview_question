@@ -21,8 +21,8 @@ function compareSpread(weather_data) {
     var current_spread = 0;
 
     //Loop starts at index 1 to exclude header row
-    //subtract 1 from length to avoid looping final row containing aggregate data for the month
-    for (var i = 1; i < weather_data.length - 1; i++) {
+    var len= weather_data.length;
+    for (var i = 1; i < len - 2; i++) {
         var daily_data = weather_data[i];
         var month = daily_data[0];
         var max = parseInt(daily_data[1]);
@@ -34,6 +34,7 @@ function compareSpread(weather_data) {
                 current_spread = spread;
                 current_month = month;
             }
+            console.log(spread);
         }
         catch (e) {
             console.error(e.message);

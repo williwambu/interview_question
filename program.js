@@ -13,7 +13,7 @@ function main() {
     //Read file
     readFile(filePath, encoding, function (err, data) {
         if (err) {
-            console.error('An error occured ' + err.message);
+            console.error('An error occurred ' + err.message);
         }
         //Parse the data
         var parsedData = parseData(data);
