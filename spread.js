@@ -34,7 +34,6 @@ function compareSpread(weather_data) {
                 current_spread = spread;
                 current_month = month;
             }
-            console.log(spread);
         }
         catch (e) {
             console.error(e.message);
