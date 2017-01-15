@@ -16,5 +16,4 @@ This will run program.js file.
 
 Assumptions
 -----------
-1. The temperature data is recorded with the same unit of measurement e.g., Celcius or Fahrenheit. This means no unit
-conversions were necessary.
+1. The temperature data is recorded with the same unit of measurement e.g., Celcius or Fahrenheit. This means no unit conversions were necessary.
