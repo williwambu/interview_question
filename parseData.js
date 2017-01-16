@@ -9,6 +9,7 @@ function parseData(data) {
     //Remove the empty line separating the headers from the values
     rows.splice(1, 1);
 
+    //use map to iterate through the same object
     return rows.map(function (row, index) {
         //trim the spaces at the beginning and end of string
         rows[index] = rows[index].trim();

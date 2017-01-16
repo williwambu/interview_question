@@ -30,6 +30,7 @@ function compareSpread(weather_data) {
 
         try {
             var spread = calculateSpread(min, max);
+            //replace current spread value if lower than computed value
             if (spread > current_spread) {
                 current_spread = spread;
                 current_month = month;
